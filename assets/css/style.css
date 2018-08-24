@@ -174,4 +174,67 @@ button {
     background: url(../images/rhino.jpg)
 }
 
-/* Media queries */
+/* Large Media queries */
+@media screen and (max-width: 980px) {
+
+    /* Shrink page */
+    html, .navi, .page-content {
+        width: 70%;
+    }
+
+    /* Shrink Navigation Bar */
+    .navi {
+        margin: 0px;
+        width: 100%;
+    }
+
+    /* Move regular links right */
+    nav {
+        float: none;
+        text-align: right;
+    }
+
+    /* Shrink portfolio  */
+    .portfolio-project {
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+    }
+}
+
+/* Medium Media queries */
+@media only screen and (max-width: 768px) {
+    
+    /* Portfolio Images */
+
+    .portfolio-project {
+        height: 125px;
+        width: 125px;
+        overflow: auto;
+    }
+}
+
+/* Small Media queries */
+@media only screen and (max-width: 640px) {
+
+    /* Navbar */
+
+    .navi {
+        margin: 0 75px;
+    }
+
+    .name {
+        margin: 0 40px;
+    }
+    
+    nav {
+        float: left;
+    }
+    
+    /* About me */
+    img {
+        float: none;
+        margin: auto;
+    }
+}
+
